@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="it.unipd.mtss.IntegerToRomanTest" time="0.046" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="it.unipd.mtss.RomanPrinterTest" time="0.048" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,8 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IT"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.2.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\andre\AppData\Local\Temp\surefire8426836679642274806\surefirebooter5993516684402566417.jar C:\Users\andre\AppData\Local\Temp\surefire8426836679642274806 2026-05-05T18-02-24_397-jvmRun1 surefire7711435245701218195tmp surefire_012656675492931113468tmp"/>
+    <property name="sun.java.command" value="C:\Users\andre\AppData\Local\Temp\surefire15117241920921443117\surefirebooter10174872254860263280.jar C:\Users\andre\AppData\Local\Temp\surefire15117241920921443117 2026-05-05T18-03-36_469-jvmRun1 surefire16566952055321602177tmp surefire_07113111369040235352tmp"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="RomanPrinterTest#testVisualizzazione"/>
     <property name="surefire.test.class.path" value="C:\Users\andre\OneDrive\Desktop\progettoREAL_mtss\roman-number\target\test-classes;C:\Users\andre\OneDrive\Desktop\progettoREAL_mtss\roman-number\target\classes;C:\Users\andre\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\andre\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\andre"/>
@@ -30,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\andre\AppData\Local\Temp\surefire8426836679642274806\surefirebooter5993516684402566417.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\andre\AppData\Local\Temp\surefire15117241920921443117\surefirebooter10174872254860263280.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18.0.2.1+1-1"/>
@@ -56,11 +57,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="testConvertFourteen" classname="it.unipd.mtss.IntegerToRomanTest" time="0.004"/>
-  <testcase name="testConvertThousand" classname="it.unipd.mtss.IntegerToRomanTest" time="0"/>
-  <testcase name="testConvertZeroThrowsException" classname="it.unipd.mtss.IntegerToRomanTest" time="0"/>
-  <testcase name="testConvertFourHundredNinetyFour" classname="it.unipd.mtss.IntegerToRomanTest" time="0"/>
-  <testcase name="testConvertMoreThousandThrowsException" classname="it.unipd.mtss.IntegerToRomanTest" time="0"/>
-  <testcase name="testConvertOne" classname="it.unipd.mtss.IntegerToRomanTest" time="0"/>
-  <testcase name="testConvertNineHundredNinetyNine" classname="it.unipd.mtss.IntegerToRomanTest" time="0"/>
+  <testcase name="testVisualizzazione" classname="it.unipd.mtss.RomanPrinterTest" time="0.007"/>
 </testsuite>
