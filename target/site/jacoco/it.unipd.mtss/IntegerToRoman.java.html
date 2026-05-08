@@ -9,28 +9,16 @@ package it.unipd.mtss;
 <span class="pc bpc" id="L9" title="1 of 4 branches missed.">    if (number &lt; 1 || number &gt; 1000) {</span>
 <span class="fc" id="L10">        throw new IllegalArgumentException(&quot;Numero fuori range&quot;);</span>
     }
-<span class="fc" id="L12">    String result = &quot;&quot;;</span>
-<span class="pc bpc" id="L13" title="1 of 2 branches missed.">    if(number&gt;=50){</span>
-<span class="nc" id="L14">      result+=&quot;L&quot;;</span>
-<span class="nc" id="L15">      number-=50;</span>
+<span class="fc" id="L12">    int[] val = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};</span>
+<span class="fc" id="L13">    String[] symbols = {&quot;M&quot;, &quot;CM&quot;, &quot;D&quot;, &quot;CD&quot;, &quot;C&quot;, &quot;XC&quot;, &quot;L&quot;, &quot;XL&quot;, &quot;X&quot;, &quot;IX&quot;, &quot;V&quot;, &quot;IV&quot;, &quot;I&quot;};</span>
+<span class="fc" id="L14">    String strS=&quot;&quot;;//stringa dove salvo i simboli</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">    for(int i=0; i&lt;val.length; i++){//parto dal più grande e lo sottrago se &lt; number</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        while(number &gt;= val[i]) {</span>
+<span class="fc" id="L17">        number -= val[i];</span>
+<span class="fc" id="L18">        strS+=symbols[i];</span>
+      }
     }
-<span class="pc bpc" id="L17" title="1 of 2 branches missed.">    if(number&gt;=10){</span>
-<span class="nc" id="L18">      result+=&quot;X&quot;;</span>
-<span class="nc" id="L19">      number-=10;</span>
-    }
-<span class="pc bpc" id="L21" title="1 of 2 branches missed.">    if (number &gt;= 5) {</span>
-<span class="nc" id="L22">        result += &quot;V&quot;;</span>
-<span class="nc" id="L23">        number -= 5;</span>
-    }
-<span class="pc bpc" id="L25" title="1 of 2 branches missed.">    if (number == 4) {</span>
-<span class="nc" id="L26">        result += &quot;IV&quot;;</span>
-<span class="nc" id="L27">        number -= 4;</span>
-    }
-<span class="fc bfc" id="L29" title="All 2 branches covered.">    while (number &gt;= 1) {</span>
-<span class="fc" id="L30">        result += &quot;I&quot;;</span>
-<span class="fc" id="L31">        number -= 1;</span>
-    }
-<span class="fc" id="L33">    return result;</span>
+<span class="fc" id="L21">    return strS;</span>
   }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

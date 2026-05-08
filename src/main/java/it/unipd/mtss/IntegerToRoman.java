@@ -9,27 +9,15 @@ public class IntegerToRoman {
     if (number < 1 || number > 1000) {
         throw new IllegalArgumentException("Numero fuori range");
     }
-    String result = "";
-    if(number>=50){
-      result+="L";
-      number-=50;
+    int[] val = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+    String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+    String strS="";//stringa dove salvo i simboli
+    for(int i=0; i<val.length; i++){//parto dal più grande e lo sottrago se < number
+        while(number >= val[i]) {
+        number -= val[i];
+        strS+=symbols[i];
+      }
     }
-    if(number>=10){
-      result+="X";
-      number-=10;
-    }
-    if (number >= 5) {
-        result += "V";
-        number -= 5;
-    }
-    if (number == 4) {
-        result += "IV";
-        number -= 4;
-    }
-    while (number >= 1) {
-        result += "I";
-        number -= 1;
-    }
-    return result;
+    return strS;
   }
 }
