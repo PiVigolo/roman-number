@@ -138,28 +138,28 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testPrintLXXXVIII() {  //verifico che la concatenazione di tutte le lettere sia ben visibile
+    public void testPrintLXXXVIII() {  //verifico la stampa del numero 88 (concatenazione dei simboli)
         String expected = 
-            "  _        __    __     __    __     __    __      __      __      _____      _____      _____  \n" +
-            " | |       \\ \\  / /     \\ \\  / /     \\ \\  / /      \\ \\    / /     |_   _|    |_   _|    |_   _| \n" +
-            " | |        \\ \\/ /       \\ \\/ /       \\ \\/ /        \\ \\  / /        | |        | |        | |   \n" +
-            " | |         >  <         >  <         >  <          \\ \\/ /         | |        | |        | |   \n" +
-            " | |____    / /\\ \\       / /\\ \\       / /\\ \\          \\  /         _| |_      _| |_      _| |_  \n" +
-            " |______|  /_/  \\_\\     /_/  \\_\\     /_/  \\_\\          \\/         |_____|    |_____|    |_____| \n";
-            
+            "  _         __    __   __    __   __    __   __      __    _____     _____     _____  \n" +
+            " | |        \\ \\  / /   \\ \\  / /   \\ \\  / /   \\ \\    / /   |_   _|   |_   _|   |_   _| \n" +
+            " | |         \\ \\/ /     \\ \\/ /     \\ \\/ /     \\ \\  / /      | |       | |       | |   \n" +
+            " | |          >  <       >  <       >  <       \\ \\/ /       | |       | |       | |   \n" +
+            " | |____     / /\\ \\     / /\\ \\     / /\\ \\       \\  /       _| |_     _| |_     _| |_  \n" +
+            " |______|   /_/  \\_\\   /_/  \\_\\   /_/  \\_\\       \\/       |_____|   |_____|   |_____| \n";
+        
         assertEquals(expected, RomanPrinter.print(88));
     }
     
     @Test
     public void testPrintXCIX() {  //verifico la stampa del numero 99
         String expected = 
-            " __    __     _____       _____     __    __ \n" +
-            " \\ \\  / /    / ____|     |_   _|    \\ \\  / / \n" +
-            "  \\ \\/ /    | |            | |       \\ \\/ /  \n" +
-            "   >  <     | |            | |        >  <   \n" +
-            "  / /\\ \\    | |____       _| |_      / /\\ \\  \n" +
-            " /_/  \\_\\    \\_____|     |_____|    /_/  \\_\\ \n";
-            
+            " __    __    _____     _____    __    __ \n" +
+            " \\ \\  / /   / ____|   |_   _|   \\ \\  / / \n" +
+            "  \\ \\/ /   | |          | |      \\ \\/ /  \n" +
+            "   >  <    | |          | |       >  <   \n" +
+            "  / /\\ \\   | |____     _| |_     / /\\ \\  \n" +
+            " /_/  \\_\\   \\_____|   |_____|   /_/  \\_\\ \n";
+        
         assertEquals(expected, RomanPrinter.print(99));
     }
 
