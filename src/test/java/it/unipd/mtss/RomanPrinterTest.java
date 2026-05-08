@@ -163,6 +163,67 @@ public class RomanPrinterTest {
         assertEquals(expected, RomanPrinter.print(99));
     }
 
+    @Test
+    public void testPrintD() {  //verifico la stampa del numero 500
+        String expected = 
+            "  _____   \n" +
+            " |  __ \\  \n" +
+            " | |  | | \n" +
+            " | |  | | \n" +
+            " | |__| | \n" +
+            " |_____/  \n";
+    
+        assertEquals(expected, RomanPrinter.print(500));
+    }
+
+    @Test
+    public void testPrintM() {  //verifico la stampa del numero 1000
+        String expected = 
+            "  __  __  \n" +
+            " |  \\/  | \n" +
+            " | \\  / | \n" +
+            " | |\\/| | \n" +
+            " | |  | | \n" +
+            " |_|  |_| \n";
+    
+        assertEquals(expected, RomanPrinter.print(1000));
+    }
+    @Test
+    public void testPrintCD() {  //verifico la stampa del numero 400
+        String expected = 
+            "  _____     _____   \n" +
+            " / ____|   |  __ \\  \n" +
+            "| |        | |  | | \n" +
+            "| |        | |  | | \n" +
+            "| |____    | |__| | \n" +
+            " \\_____|   |_____/  \n";
+        
+        assertEquals(expected, RomanPrinter.print(400));
+    }
+
+    @Test
+    public void testPrintCM() {  //verifico la stampa del numero 900
+        String expected = 
+            "  _____     __  __  \n" +
+            " / ____|   |  \\/  | \n" +
+            "| |        | \\  / | \n" +
+            "| |        | |\\/| | \n" +
+            "| |____    | |  | | \n" +
+            " \\_____|   |_|  |_| \n";
+        
+        assertEquals(expected, RomanPrinter.print(900));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumberTooLow() {
+        RomanPrinter.print(0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumberTooHigh() {
+        RomanPrinter.print(1001);
+    }
+
     @Test(expected = IllegalArgumentException.class) //gestisco il caso in cui la conversione non avvenga correttamente
         public void testPrintNull() {
             RomanPrinter.print(-1); 
