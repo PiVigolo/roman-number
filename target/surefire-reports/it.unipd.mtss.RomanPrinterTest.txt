@@ -1,4 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: it.unipd.mtss.RomanPrinterTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in it.unipd.mtss.RomanPrinterTest
+Tests run: 13, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in it.unipd.mtss.RomanPrinterTest
+testPrintXCIX(it.unipd.mtss.RomanPrinterTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:< __    __    [ _____       _____     __    __ 
+ \ \  / /    / ____|     |_   _|    \ \  / / 
+  \ \/ /    | |            | |       \ \/ /  
+   >  <     | |            | |        >  <   
+  / /\ \    | |____       _| |_      / /\ \  
+ /_/  \_\    \_____|     |_____| ]   /_/  \_\ 
+> but was:< __    __    [_____     _____    __    __ 
+ \ \  / /   / ____|   |_   _|   \ \  / / 
+  \ \/ /   | |          | |      \ \/ /  
+   >  <    | |          | |       >  <   
+  / /\ \   | |____     _| |_     / /\ \  
+ /_/  \_\   \_____|   |_____|]   /_/  \_\ 
+>
+	at it.unipd.mtss.RomanPrinterTest.testPrintXCIX(RomanPrinterTest.java:163)
+
+testPrintLXXXVIII(it.unipd.mtss.RomanPrinterTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<  _        [__    __     __    __     __    __      __      __      _____      _____      _____  
+ | |       \ \  / /     \ \  / /     \ \  / /      \ \    / /     |_   _|    |_   _|    |_   _| 
+ | |        \ \/ /       \ \/ /       \ \/ /        \ \  / /        | |        | |        | |   
+ | |         >  <         >  <         >  <          \ \/ /         | |        | |        | |   
+ | |____    / /\ \       / /\ \       / /\ \          \  /         _| |_      _| |_      _| |_  
+ |______|  /_/  \_\     /_/  \_\     /_/  \_\          \/         |_____|    |_____| ]   |_____| 
+> but was:<  _        [ __    __   __    __   __    __   __      __    _____     _____     _____  
+ | |        \ \  / /   \ \  / /   \ \  / /   \ \    / /   |_   _|   |_   _|   |_   _| 
+ | |         \ \/ /     \ \/ /     \ \/ /     \ \  / /      | |       | |       | |   
+ | |          >  <       >  <       >  <       \ \/ /       | |       | |       | |   
+ | |____     / /\ \     / /\ \     / /\ \       \  /       _| |_     _| |_     _| |_  
+ |______|   /_/  \_\   /_/  \_\   /_/  \_\       \/       |_____|   |_____|]   |_____| 
+>
+	at it.unipd.mtss.RomanPrinterTest.testPrintLXXXVIII(RomanPrinterTest.java:150)
+
