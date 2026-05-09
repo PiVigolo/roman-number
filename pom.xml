@@ -86,7 +86,10 @@
           </execution>
         </executions>
       </plugin>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3945dc53a79725a10cc33b3e4d3465860ae85d67
       <plugin>
         <groupId>org.eluder.coveralls</groupId>
         <artifactId>coveralls-maven-plugin</artifactId>
