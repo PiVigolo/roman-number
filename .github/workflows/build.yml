@@ -2,9 +2,9 @@ name: Roman Number CI
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, develop, feature/readme ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main, develop, feature/readme ]
 
 jobs:
   build:
