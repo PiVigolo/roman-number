@@ -82,7 +82,18 @@ public class RomanPrinterTest {
             
         assertEquals(expected, RomanPrinter.print(10));
     }
+    @Test
+    public void testPrintXLI() { //verifico la stampa del numero 10
+        String expected = 
+        " __    __    _          _____  \n" +
+        " \\ \\  / /   | |        |_   _| \n" +
+        "  \\ \\/ /    | |          | |   \n" +
+        "   >  <     | |          | |   \n" +
+        "  / /\\ \\    | |____     _| |_  \n" +
+        " /_/  \\_\\   |______|   |_____| \n";
 
+        assertEquals(expected, RomanPrinter.print(41));
+    }
     @Test
     public void testPrintL() {  //verifica la stampa del numero 50
         String expected = 
