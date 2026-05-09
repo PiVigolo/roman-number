@@ -24,14 +24,10 @@ jobs:
           java-version: '17'
           cache: maven
 
-      # compilazione del progetto (fase compile)
-      - name: Compile Project
-        run: mvn compile
+      # Compilazione, Test, Checkstyle e Invio Coverage a Coveralls
+      - name: Build, Test and Report Coverage
+        run: mvn clean compile test jacoco:report coveralls:report -DrepoToken=${{ secrets.COVERALLS_REPO_TOKEN }}
 
-      # esecuzione dei test unitari (fase test)
-      - name: Run JUnit Tests
-        run: mvn test
-
-      # analisi statica del codice (fase package) con checkstyle
+      # Se vuoi comunque generare il package (JAR) e controllare Checkstyle
       - name: Static Code Analysis (Checkstyle)
-        run: mvn package
+        run: mvn checkstyle:check
