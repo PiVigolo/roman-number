@@ -162,6 +162,18 @@ public class RomanPrinterTest {
         
         assertEquals(expected, RomanPrinter.print(99));
     }
+    @Test
+public void testPrintCDXCI() {
+    String expected = 
+        "  _____     _____     __    __    _____     _____  \n" +
+        " / ____|   |  __ \\    \\ \\  / /   / ____|   |_   _| \n" +
+        "| |        | |  | |    \\ \\/ /   | |          | |   \n" +
+        "| |        | |  | |     >  <    | |          | |   \n" +
+        "| |____    | |__| |    / /\\ \\   | |____     _| |_  \n" +
+        " \\_____|   |_____/    /_/  \\_\\   \\_____|   |_____| \n";
+
+        assertEquals(expected, RomanPrinter.print(491));
+    }
 
     @Test
     public void testPrintD() {  //verifico la stampa del numero 500
