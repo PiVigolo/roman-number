@@ -1,0 +1,33 @@
+name: Roman Number CI
+
+on:
+  push:
+    branches: [ main, develop, feature/readme ]
+  pull_request:
+    branches: [ main, develop, feature/readme ]
+
+jobs:
+  build:
+    name: CI Pipeline
+    runs-on: ubuntu-latest
+
+    steps:
+      # scaricamento del codice sorgente dal repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # configurazione dell'ambiente Java
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: maven
+
+      # Compilazione, Test, Checkstyle e Invio Coverage a Coveralls
+      - name: Build, Test and Report Coverage
+        run: mvn clean compile test jacoco:report coveralls:report -DrepoToken=${{ secrets.COVERALLS_REPO_TOKEN }}
+
+      # genera il package (JAR) e controlla Checkstyle
+      - name: Static Code Analysis (Checkstyle)
+        run: mvn checkstyle:check
