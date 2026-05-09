@@ -1,7 +1,7 @@
 #roman-number
 
 [![Build Status](https://github.com/PiVigolo/roman-number/actions/workflows/build.yml/badge.svg?branch=develop)](https://github.com/PiVigolo/roman-number/actions)
-[![Coverage Status](https://coveralls.io/repos/github/PiVigolo/roman-number/badge.svg?branch=develop)](https://coveralls.io/github/PiVigolo/roman-number?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/PiVigolo/roman-number/badge.svg)](https://coveralls.io/github/PiVigolo/roman-number)
 
 TITOLO: CONVERTITORE NUMERO ARABO(1-1000) A NUMERO ROMANO
 DESCRIZIONE:
