@@ -28,6 +28,6 @@ jobs:
       - name: Build, Test and Report Coverage
         run: mvn clean compile test jacoco:report coveralls:report -DrepoToken=${{ secrets.COVERALLS_REPO_TOKEN }}
 
-      # Se vuoi comunque generare il package (JAR) e controllare Checkstyle
+      # genera il package (JAR) e controlla Checkstyle
       - name: Static Code Analysis (Checkstyle)
         run: mvn checkstyle:check
