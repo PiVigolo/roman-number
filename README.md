@@ -7,3 +7,7 @@ TITOLO: CONVERTITORE NUMERO ARABO(1-1000) A NUMERO ROMANO
 DESCRIZIONE:
 Dato in input un numero intero compreso tra 1-1000 viene restituito stampato in forma ASCII Art il corrispondente valore in numero romano
 Vengono inoltre gestiti dal codice input non compresi nell'intervallo lanciando l'eccezione IllegalArgumentException("Numero fuori range").
+
+
+
+Il controllo dell'header non viene effettuato sulle classi RomanPrinterTest e IntegerToRomanTest.
