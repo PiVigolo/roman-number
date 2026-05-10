@@ -10,4 +10,4 @@ Vengono inoltre gestiti dal codice input non compresi nell'intervallo lanciando 
 
 
 
-Il controllo dell'header non viene effettuato sulle classi RomanPrinterTest e IntegerToRomanTest.
+Premessa: Il controllo dell'header non viene effettuato sulle classi RomanPrinterTest e IntegerToRomanTest.
